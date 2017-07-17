@@ -1,9 +1,4 @@
-var greet =  function(){
-    console.log("hello");
-}();
+var greet = require("./greet");
 
-greet;
-
-(function(){
-    console.log("hello 2");
-}());
+greet.english();
+greet.spanish();
