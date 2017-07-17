@@ -1,19 +1,9 @@
-function Person(firstname, lastname){
-    this.firstname = firstname;
-    this.lastname = lastname;
-}
+var greet =  function(){
+    console.log("hello");
+}();
 
-Person.prototype.greet =  function(){
-    console.log("Hello, " + this.firstname + " " + this.lastname);
-}
+greet;
 
-var john = new Person('John', 'Doe');
-john.greet();   
-
-
-var jane = new Person('Jane', 'Doe');
-jane.greet();
-
-console.log(john.__proto__);
-console.log(jane.__proto__);
-console.log(jane.__proto__===john.__proto__);
+(function(){
+    console.log("hello 2");
+}());
