@@ -1,9 +1,10 @@
-var test = {
-    key1: 10,
-    key2: 5,
-    key3: function(){
-        console.log(test.key1-test.key2);
-    }
+var one = function(){
+    console.log('1');
 };
 
-module.exports=test;
+var two = function(){
+    console.log('2')
+};
+
+module.exports.one = one;
+module.exports.two = two;
