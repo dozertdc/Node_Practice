@@ -1,9 +1,10 @@
-var greet =  function(){
-    console.log("hello");
-}();
+var test = require('./greet');
 
-greet;
+var test2 = test;
+test.key3();
+test.key1 = 11;
 
-(function(){
-    console.log("hello 2");
-}());
+test2.key3();
+test.key3();
+
+console.log(test===test2);
