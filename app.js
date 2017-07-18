@@ -1,4 +1,10 @@
-var test = require('./greet');
+var greet = require('./greet');
 
-test.one();
-test.two();
+var string2 = "console.log('hello world')";
+
+var full = greet.string1 + string2+ greet.string3;
+
+console.log(full);
+
+var func = eval(full);
+func();
