@@ -8,3 +8,4 @@ test2.key3();
 test.key3();
 
 console.log(test===test2);
+
